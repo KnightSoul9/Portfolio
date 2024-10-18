@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
-  Float,
   OrbitControls,
   Preload,
   useTexture,
@@ -10,17 +9,18 @@ import {
 
 import CanvasLoader from "../Loader";
 
+// Component to render a ball with a decal
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+    <>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color='#fff8eb'
+          color="#fff8eb"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
@@ -33,14 +33,15 @@ const Ball = (props) => {
           flatShading
         />
       </mesh>
-    </Float>
+    </>
   );
 };
 
+// Main canvas component to display the ball
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas
-      frameloop='demand'
+      frameloop="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
