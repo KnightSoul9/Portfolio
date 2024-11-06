@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = React.memo(({ isMobile }) => {
@@ -8,14 +8,13 @@ const Computers = React.memo(({ isMobile }) => {
 
   return (
     <mesh>
-      {/* Using a single ambient light for simplicity */}
-      <hemisphereLight intensity={0.4} />
-      <pointLight intensity={1} position={[0, 10, 0]} />
+      <hemisphereLight intensity={0.2} />
+      <pointLight intensity={0.5} position={[0, 10, 0]} />
       <primitive
         object={scene}
         scale={isMobile ? 0.7 : 0.75}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        rotation={[0, 0, 0]} // Maintain the original rotation
       />
     </mesh>
   );
@@ -42,19 +41,16 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       frameloop="demand"
-      shadows
+      shadows={false}
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 3, 5], fov: 25 }} // Keep the original camera settings
+      style={{ height: '100vh', display: 'block', margin: '0 auto' }} // Center Canvas
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
+        {/* Removed OrbitControls to remove 3D interaction */}
         <Computers isMobile={isMobile} />
       </Suspense>
-      <Preload all />
+      <Preload />
     </Canvas>
   );
 };
