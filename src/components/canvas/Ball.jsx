@@ -2,11 +2,9 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
-  OrbitControls,
   Preload,
   useTexture,
 } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
 
 // Component to render a ball with a decal
@@ -15,9 +13,9 @@ const Ball = (props) => {
 
   return (
     <>
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2.75}>
+      <ambientLight intensity={0.1} /> {/* Reduced intensity */}
+      <directionalLight position={[0, 0, 0.05]} intensity={0.5} /> {/* Reduced intensity */}
+      <mesh castShadow receiveShadow scale={2.5}> {/* Slightly reduced scale */}
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color="#fff8eb"
@@ -27,7 +25,7 @@ const Ball = (props) => {
         />
         <Decal
           position={[0, 0, 1]}
-          rotation={[2 * Math.PI, 0, 6.25]}
+          rotation={[Math.PI, 0, Math.PI / 3]} // Reduced rotation complexity
           scale={1}
           map={decal}
           flatShading
@@ -46,8 +44,9 @@ const BallCanvas = ({ icon }) => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
+        {/* Disabled auto-rotation to stop motion */}
+        {/* <OrbitControls enableZoom={false} enablePan={false} />  */}
+        <Ball imgUrl={icon} /> 
       </Suspense>
 
       <Preload all />
