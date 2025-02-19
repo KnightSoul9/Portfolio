@@ -27,7 +27,7 @@ export default function SettingsProvider({ children }) {
 		setLanguage((changeLanguage) => !changeLanguage);
 	}
 
-	var language = changeLanguage == true ? enusJson : ptbrJson;
+	var language = changeLanguage == true ? ptbrJson : enusJson;
 
 	return (
 		<SettingsContext.Provider value={{ changeTheme, changeLanguageLocalization, language }}>

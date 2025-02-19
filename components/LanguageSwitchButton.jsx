@@ -76,24 +76,21 @@ const LanguageWrapper = styled.div`
 export default function LanguageSwitchButton() {
 	const { changeLanguageLocalization } = useContext(SettingsContext);
 	const [checked, setChecked] = useState(false);
-
 	function handleCheckSwitch() {
 		setChecked((checked) => !checked);
 		changeLanguageLocalization();
 	}
-
 	return (
 		<LanguageWrapper>
-
-			<Image src="/img/ptbr.png" alt="Indian Logo" width={28} height={28} objectFit="cover" />
+			<Image src="/img/enus.png" alt="American Logo" width={28} height={28} objectFit="cover" />
 			<SwitchButton>
 				<label className="switch">
 					<input type="checkbox" checked={checked} onClick={handleCheckSwitch} readOnly data-splitbee-event="language-change" />
 					<span className="slider round"></span>
 				</label>
 			</SwitchButton>
-			<Image src="/img/enus.png" alt="American Logo" width={28} height={28} objectFit="cover" />
-
+			<Image src="/img/ptbr.png" alt="Indian Logo" width={28} height={28} objectFit="cover"/>
+			
 		</LanguageWrapper>
 	);
 }

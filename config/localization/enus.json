@@ -85,6 +85,94 @@
 			"id_2": {
 				"title": "DEVRADAR",
 				"description": "Application resulting from the week Omnistack #10 by Rocketseat. The application aims to connect developers close to your current location and working with the same technologies."
+			},
+			"id_3": {
+				"title": "BE THE HERO",
+				"description": "Application resulting from Rocketseat's Omnistack #11 week. The application is a way to connect people to NGOs that need some kind of help."
+			},
+			"id_4": {
+				"title": "INTEGRA API WRAPPER",
+				"description": "Node.js server for using the Inthegra API provided by STRANS from Teresina - PI."
+			},
+			"id_5": {
+				"title": "LETMEASK",
+				"description": "Application resulting from Rocketseat's Next Level Week #06. The application provides an environment where the user can log in using his Google account and create rooms on subjects of interest for other users to create questions."
+			},
+			"id_6": {
+				"title": "PLANTMANAGER",
+				"description": "Application resulting from Rocketseat's Next Level Week #05. The application provides an irrigation scheduler for your plants, giving tips on each species, as well as the best irrigation schedules. The app displays a push notification whenever it's time to water your plant."
+			},
+			"id_7": {
+				"title": "NPS SURVEY SYSTEM",
+				"description": "Application resulting from Rocketseat's Next Level Week #04. The application allows calculating the company's NPS (Net Promoter Score) through satisfaction surveys sent to users by email."
+			},
+			"id_8": {
+				"title": "FASTTRACK API",
+				"description": "Backend of a Node.js server that provides a REST API that allows sharing the smartphone's geolocation to a cloud database maintained by MongoDB."
+			},
+			"id_9": {
+				"title": "INTHEGRE-SE APP",
+				"description": "Application that monitors the public bus fleet in the city of Teresina - PI, and displays on a map the current location of each bus in activity at the moment, with intervals of 30 seconds between each position update."
+			},
+			"id_10": {
+				"title": "RADAR POSITION CRAWLER",
+				"description": "Study of the BeautifulSoup library that, used with the Python programming language, makes it possible to collect data from websites. This algorithm searches the website of Teresina City Hall - PI and provides the download link of the current position of speed cameras in the city."
+			},
+			"id_11": {
+				"title": "PORTFOLIO PAGE",
+				"description": "Personal portfolio page, built using React.js, Next.js, Styled Components and hosted on the Vercel platform."
+			},
+			"id_12": {
+				"title": "LOGISTICS INFORMATION AGGREGATE",
+				"description": "System to aggregate the company's internal logistic information."
+			},
+			"id_13": {
+				"title": "LOGISTICS INFORMATION AGGREGATOR API",
+				"description": "API written in Javascript/Node.js and hosted on an EC2 server on AWS to provide the company's internal logistical information."
+			},
+			"id_14": {
+				"title": "BYTEBANK",
+				"description": "App resulting from Alura's Flutter track. Using Flutter to generate the cross-platform application, this application serves to register account numbers and their respective values ​​to be recorded in dynamic states for display in the app."
+			},
+			"id_15": {
+				"title": "WEB CALCULATOR",
+				"description": "Web application of a calculator, written with typescript and using the Svelte Framework/Compiler."
+			},
+			"id_16": {
+				"title": "LAYOUT MATERIAL DESIGN",
+				"description": "Boilerplate structure for an application using the Material UI frontend framework."
+			},
+			"id_17": {
+				"title": "RN MAPS",
+				"description": "Small test application that uses the React Native framework to build a map view using the Google Maps SDK."
+			},
+			"id_18": {
+				"title": "RN E-COMMERCE UI",
+				"description": "UI that mimics some existing components, pages and dynamics in native mobile apps for e-commerce."
+			},
+			"id_19": {
+				"title": "FIREBASE API BOILERPLATE",
+				"description": "Boilerplate structure that integrates a CRUD in the Firestore database using firebase API."
+			},
+			"id_20": {
+				"title": "MATERIAL V6 DASH",
+				"description": "App boilerplate structure that uses the Material UI framework in version 6."
+			},
+			"id_21": {
+				"title": "GLOBAL STATE MANAGER",
+				"description": "Implementation study of the Zustand and Jotai libs to manage the global states of the web application."
+			},
+			"id_22": {
+				"title": "CÉDULA PROMOTORA",
+				"description": "Landing page of Cédula Promotora, a payroll loan company."
+			},
+			"id_23": {
+				"title": "PRÓDOS DIGITAL",
+				"description": "Landing page of PRÓDOS DIGITAL, a software development and digital marketing company."
+			},
+			"id_24": {
+				"title": "TDAH CLASS",
+				"description": "Mobile application for the Android operating system, which simulates, through questions and answers, the probability of a student having an ADHD diagnosis."
 			}
 		}
 	},

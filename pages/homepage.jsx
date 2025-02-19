@@ -253,7 +253,7 @@ export default function HomePage() {
 				<FloatNavigationBar />
 				<ProgressBar color={theme.colors.branding} height={5} />
 				<Head
-					title="Portfolio of SG"
+					title="Portfolio of Satyam"
 					metaDescription="Web portfolio of programming projects by Dev Satyam Gupta"
 					keywords="Satyam Gupta, Satyam, Gupta, Programming, Portfolio, Dev, Programmer, Developer, Software Developer, Full-Stack Programmer, Frontend Developer"
 				/>
