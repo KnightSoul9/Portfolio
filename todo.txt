@@ -1,0 +1,15 @@
+Refactoring and Implemented Improvements
+Pending:
+Add a testimonials section to the Footer
+Completed:
+Update page subtitles
+Add a new project to the cards (TDAH CLASS)
+Apply a new style to the home page
+Update version
+Clicking on a card now opens a modal
+Add client testimonials
+Modal opening still allows page scrolling
+Implement FAQ accordion
+Replace the resume file with an updated version
+Fix "About Me" section link covering the title
+Convert the download button from a link to an actual resume download button
