@@ -469,8 +469,8 @@ export default function Portifolio() {
 			},
 			{
 				id: 11,
-				title: language.portifolioPage.projects.id_7.title,
-				description: language.portifolioPage.projects.id_7.description,
+				title: language.portifolioPage.projects.id_11.title,
+				description: language.portifolioPage.projects.id_11.description,
 				liveDemoUrl: "https://game-listing-website-roan.vercel.app/",
 				imageSourcePath: "/img/portfolio-projects/gamelisting.png",
 				techs: [
