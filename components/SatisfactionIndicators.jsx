@@ -83,10 +83,10 @@ export default function SatisfactionIndicators() {
 		<SectionSatisfactionIndicators>
 			<ScrollAnimation animateIn="fadeIn" animateOnce delay={200}>
 				<WrapperStatistics>
-					<NumberAnimated number={5} description={language.aboutMePage.stats.stat_1} />
-					<NumberAnimated number={15} description={language.aboutMePage.stats.stat_2} />
-					<NumberAnimated number={80} description={language.aboutMePage.stats.stat_3} hasPercent />
-					<NumberAnimated number={10} description={language.aboutMePage.stats.stat_4} />
+					<NumberAnimated number={2} description={language.aboutMePage.stats.stat_1} />
+					<NumberAnimated number={8} description={language.aboutMePage.stats.stat_2} />
+					<NumberAnimated number={90} description={language.aboutMePage.stats.stat_3} hasPercent />
+					<NumberAnimated number={7} description={language.aboutMePage.stats.stat_4} />
 				</WrapperStatistics>
 			</ScrollAnimation>
 		</SectionSatisfactionIndicators>

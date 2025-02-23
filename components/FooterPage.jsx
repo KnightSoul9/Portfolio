@@ -361,7 +361,7 @@ export default function FooterPage(props) {
 					</SectionFooterMenu>
 				</ScrollAnimation>
 
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={800}>
+				<ScrollAnimation animateIn="fadeIn" animateOnce delay={400}>
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelStats.title}</FooterTextTitle>
 

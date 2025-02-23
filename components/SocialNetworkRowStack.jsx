@@ -73,7 +73,7 @@ export default function SocialNetworkRowStack() {
 				<MailSend />
 			</ButtonSocialMediaIcon>
 
-			<ButtonSocialMediaIcon href="https://wa.me/978682831/?text=Hello%20Satyam,%20how%20are%20you?%20I%20came%20through%20your%20personal%20page!" target="_blank">
+			<ButtonSocialMediaIcon href="https://wa.me/919798682831?text=Hello%20Satyam%2C%20how%20are%20you%3F%20I%20came%20through%20your%20personal%20page%21" target="_blank">
 				<LogoWhatsapp />
 			</ButtonSocialMediaIcon>
 
