@@ -204,13 +204,13 @@ export default function LayoutTemplate({ children }) {
 					</div>
 					<Fade top delay={500} duration={200}>
 						<LanguageSwitchButton />
-						{/* <SwitchThemeButton /> */}
+						<SwitchThemeButton />
 					</Fade>
 				</NavbarOptionContainer>
 
 				<SwitchMenuContainer>
 					<LanguageSwitchButton />
-					{/* <SwitchThemeButton /> */}
+					<SwitchThemeButton />
 				</SwitchMenuContainer>
 			</HeaderContainer>
 
