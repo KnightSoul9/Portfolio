@@ -164,7 +164,8 @@ export default function ServicesOffer() {
 					<ScrollAnimation animateIn="fadeIn" animateOnce delay={500}>
 						<CardService>
 							<div className="box">
-								<DesignServices />
+							<CodeBlock />
+								
 							</div>
 
 							<h3>{language.servicesOffer.cards.consultancy.title}</h3>
@@ -175,7 +176,7 @@ export default function ServicesOffer() {
 					<ScrollAnimation animateIn="fadeIn" animateOnce delay={600}>
 						<CardService>
 							<div className="box">
-								<CodeBlock />
+							<Robot />
 							</div>
 							<h3>{language.servicesOffer.cards.mobile_devlopment.title}</h3>
 							<p>{language.servicesOffer.cards.mobile_devlopment.contentText}</p>
@@ -195,7 +196,7 @@ export default function ServicesOffer() {
 					<ScrollAnimation animateIn="fadeIn" animateOnce delay={800}>
 						<CardService>
 							<div className="box">
-								<CodeBlock />
+							<DesignServices />
 							</div>
 							<h3>{language.servicesOffer.cards.support.title}</h3>
 							<p>{language.servicesOffer.cards.support.contentText}</p>

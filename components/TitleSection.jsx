@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 	justify-content: center;
 	align-items: ${({ alignTitle }) => (alignTitle === "left" ? "flex-start" : "center")};
 	flex-direction: column;
-	padding: 0 40px;
+	padding: 0 0px;
 
 	${({ hasMarginBottom }) => hasMarginBottom && "margin-bottom: 90px; @media (max-width: 900px) {	margin-bottom: 40px; }"}
 

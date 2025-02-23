@@ -8,7 +8,7 @@ export const darkTheme = {
 		background: "#000",
 		backgroundSecondary: "#272727",
 		backgroundTertiary: "#313131",
-		branding: "#fec800",
+		branding: "#0D6EFD",
 		brandingDarker: "#c79d07",
 		title: "#fff",
 		inactiveTitle: "#8b8b8b",
