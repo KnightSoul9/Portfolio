@@ -158,34 +158,58 @@ export default function Testimonials() {
 			<TitleSection title={language.testimonialPage.title} subtitle={language.testimonialPage.subtitle} hasMarginBottom />
 
 			<Marquee autoFill gradient loop={0} direction="left" speed={60} gradientColor={theme.colors.backgroundPageRgb}>
-				{[1, 2, 3, 4, 5, 6].map((testimonial, index) => (
-					<Testimonial key={index}>
-						<QuotesLeft className="quote-icon" />
-
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt blanditiis saepe nisi ipsum quidem, sapiente iusto deleniti vero nesciunt quasi aut, assumenda fugit! Eaque deserunt veritatis officiis
-							voluptate repellat.
-						</p>
-
-						<div className="user-star-container">
-							<div className="user-container">
-								<div className="user-image"></div>
-								<div className="user-data">
-									<h4>NOME DA PESSOA</h4>
-									<span>Descrição sobre a pessoa</span>
-								</div>
+				(
+				<Testimonial>
+					<QuotesLeft className="quote-icon" />
+					<p>
+						Satyam worked as an software developer intern with Xplainerr for 6 months. He built multiple new features from scratch like event registration page, course landing page & payments link integration. He has added a lot
+						of value to Xplainerr in a short duration. He is a great talent to work with & I wish him all the best.
+					</p>
+					<div className="user-star-container">
+						<div className="user-container">
+						<div className="user-image">
+								<img src="/clients/venkatesh.jpeg" alt="Robin" className="user-image" />
 							</div>
-
-							<div className="stars-container">
-								<StarFill className="star star-filled" />
-								<StarFill className="star star-filled" />
-								<StarFill className="star star-filled" />
-								<StarFill className="star star-filled" />
-								<StarFill className="star" />
+							<div className="user-data">
+								<h4>Venkatesh Gupta</h4>
+								<span>Product Manager at Service Now</span>
 							</div>
 						</div>
-					</Testimonial>
-				))}
+
+						<div className="stars-container">
+							<StarFill className="star star-filled" />
+							<StarFill className="star star-filled" />
+							<StarFill className="star star-filled" />
+							<StarFill className="star star-filled" />
+							<StarFill className="star star-filled" />
+						</div>
+					</div>
+				</Testimonial>
+				<Testimonial>
+					<QuotesLeft className="quote-icon" />
+					<p>Working with this team was fantastic! They built my Rummy game website and handled digital marketing flawlessly. Professional, transparent, and result-driven—highly recommend for web development and marketing!</p>
+					<div className="user-star-container">
+						<div className="user-container">
+							<div className="user-image">
+								<img src="/clients/robin.jpeg" alt="Robin" className="user-image" />
+							</div>
+
+							<div className="user-data">
+								<h4>Robin</h4>
+								<span>CEO at Boostup Online</span>
+							</div>
+						</div>
+
+						<div className="stars-container">
+							<StarFill className="star star-filled" />
+							<StarFill className="star star-filled" />
+							<StarFill className="star star-filled" />
+							<StarFill className="star star-filled" />
+							<StarFill className="star star-filled" />
+						</div>
+					</div>
+				</Testimonial>
+				)
 			</Marquee>
 		</Section>
 	);
